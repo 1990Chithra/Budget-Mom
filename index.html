@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+    <!-- <link rel="icon" href="assets/logo.png"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="https://static.vecteezy.com/system/resources/thumbnails/009/426/100/small_2x/budget-line-filled-free-vector.jpg">
+
+</head>
+<body style="background-color:bisque;">
+    <h1 class="text-center m-5" style="font-weight:500;color:magenta;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Budget Mom</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 d-none d-md-block">
+                <h2 class="fw-light">The budget is not just a collection of numbers, but an expression of our values and aspirations.</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1K-Oyj_khjO0Q_nFHapSH_nBoiY2W-2jrGg&usqp=CAU" alt="calculator-img" class="img-fluid" style="height: 25rem">
+            </div>
+            <div class="col-md-6">
+                <div class="p-4 border h-100 mt-md-2">
+                        <h2 class="text-center text-info">Login</h2>
+                        <form action="" class="border border-3 px-3">
+                            <div class="form-floating mt-3 mb-3">
+                                <input type="text" class="form-control" id="l-username" placeholder="Username">
+                                <label for="l-username">Username</label>
+                            </div>
+                            <div class="form-floating  mb-3">
+                                <input type="password" class="form-control" id="l-password" placeholder="Password">
+                                <label for="l-password">Password</label>
+                            </div>
+                            <div class="mb-3">
+                                <button class="btn btn-info w-100 py-3" onclick="login()" type="button" id="logbtn">LOGIN</button>
+                            </div>
+                            <div>
+                                <p class="text-center text-success">New User?  <span class="btn btn-success" type="button"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Register</span></p>
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 text-center text-success-emphasis" id="reg-heading">Register</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control" id="r-username" placeholder="Username">
+                        <label for="r-username">Username</label>
+                    </div>
+                    <div class="form-floating  mb-3">
+                        <input type="email" class="form-control" id="r-email" placeholder="Email">
+                        <label for="r-email">Email</label>
+                    </div>
+                    <div class="form-floating  mb-3">
+                        <input type="password" class="form-control" id="r-password" placeholder="Password">
+                        <label for="r-password">Password</label>
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn btn-info w-100 py-3"   type="button" onclick="registerUser()">REGISTER</button>
+                    </div>
+                </form>
+    
+          </div>
+        </div>
+      </div>
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
+
+  
